@@ -1,0 +1,12 @@
+## YAML Template.
+---
+services:
+  - type: web
+    name: spring-boot-app
+    env: java
+    plan: free
+    buildCommand: "mvn clean package"
+    startCommand: "java -jar target/seu-projeto.jar"
+    branches:
+      - main
+    autoDeploy: true
