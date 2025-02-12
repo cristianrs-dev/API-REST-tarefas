@@ -2,11 +2,12 @@
 ---
 services:
   - type: web
-    name: spring-boot-app
+    name: tarefas-app
     env: java
     plan: free
     buildCommand: "mvn clean package"
-    startCommand: "java -jar target/seu-projeto.jar"
+    startCommand: "java -jar target/tarefas-0.0.1-SNAPSHOT.jar"
     branches:
       - main
     autoDeploy: true
+
